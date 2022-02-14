@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 74840441}
   - component: {fileID: 74840440}
   - component: {fileID: 74840443}
+  - component: {fileID: 74840444}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -214,13 +215,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74840439}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7200ba5529e3a7943a9647863b64cbe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rootNote: {fileID: 326532107}
   target: {fileID: 212067025}
+--- !u!114 &74840444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74840439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab397e35119e622419086a7d2b091528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 326532107}
+  target: {fileID: 2020082491}
 --- !u!1 &212067024
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,8 +267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parents:
   - {fileID: 1800977504}
-  children:
-  - {fileID: 1800977504}
+  children: []
 --- !u!4 &212067026
 Transform:
   m_ObjectHideFlags: 0
@@ -437,9 +451,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1369b885d80f594aaf55b4b8b3bd7bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parents: []
-  children:
+  parents:
   - {fileID: 948632674}
+  children: []
 --- !u!4 &344567255
 Transform:
   m_ObjectHideFlags: 0
@@ -483,9 +497,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1369b885d80f594aaf55b4b8b3bd7bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parents: []
-  children:
+  parents:
   - {fileID: 909798420}
+  children: []
 --- !u!4 &374990414
 Transform:
   m_ObjectHideFlags: 0
@@ -532,7 +546,8 @@ MonoBehaviour:
   parents:
   - {fileID: 326532107}
   children:
-  - {fileID: 326532107}
+  - {fileID: 2020082491}
+  - {fileID: 374990413}
 --- !u!4 &909798421
 Transform:
   m_ObjectHideFlags: 0
@@ -624,9 +639,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1369b885d80f594aaf55b4b8b3bd7bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parents: []
-  children:
+  parents:
   - {fileID: 948632674}
+  children: []
 --- !u!4 &1127043461
 Transform:
   m_ObjectHideFlags: 0
@@ -718,9 +733,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1369b885d80f594aaf55b4b8b3bd7bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parents: []
-  children:
+  parents:
   - {fileID: 909798420}
+  children: []
 --- !u!4 &2020082492
 Transform:
   m_ObjectHideFlags: 0
