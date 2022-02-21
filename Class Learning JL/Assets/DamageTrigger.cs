@@ -8,7 +8,7 @@ public class DamageTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out Health health) == true);
+        if (other.TryGetComponent(out Health health) == true)
         {
             health.TakeDamage(damage);
         }

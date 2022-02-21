@@ -65,16 +65,16 @@ public class PlayerController : MonoBehaviour
                     controller.height = 1;
                 }
             }
-            if (crouching == true);
-            {
-                if (Input.GetKeyUp(KeyCode.C) == true)
+            if (crouching == true)
                 {
-                    crouching = false;
-                    currentSpeed = speed;
-                    controller.height = 2;          
-                }
+                    if (Input.GetKeyUp(KeyCode.C) == true)
+                    {
+                        crouching = false;
+                        currentSpeed = speed;
+                        controller.height = 2;          
+                    }
 
-            }
+                }
             
         }
         ApplyMovement();
